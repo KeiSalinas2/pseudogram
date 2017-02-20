@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
+
 import { Button } from 'react-materialize';
+
+import  FileUpload from './fileUpload'
 import './App.css';
 
 class App extends Component {
@@ -43,6 +46,7 @@ class App extends Component {
           <img src={this.state.user.photoURL} alt={this.state.user.displayName} className="avatar m-t-md"></img>
           <p>Hola {this.state.user.displayName}!</p>
           <Button waves='light' className="grey" onClick={this.handleLogout}>Salir</Button>
+          <FileUpload />
         </div>
       );
     }
