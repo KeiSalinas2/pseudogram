@@ -5,8 +5,6 @@ import config from '../config/config'
 import App from './App';
 import './index.css';
 
-console.log(config);
-
 firebase.initializeApp({
   apiKey: config.firebase.apiKey,
   authDomain: config.firebase.authDomain,
